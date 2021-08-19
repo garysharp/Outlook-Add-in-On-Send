@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>No UI</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.debug.js"></script>
+    <script type="text/javascript">
+        Office.initialize = function(reason) {}
+
+        function onSendHandler(event) {
+            event.completed({
+                allowEvent: true
+            });
+        }
+    </script>
+</head>
+
+<body>
+    This page is left blank intentionally.
+</body>
+
+</html>
